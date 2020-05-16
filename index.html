@@ -23,6 +23,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
+    <script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163930798-1"></script>
@@ -37,6 +39,11 @@
 
         gtag('config', 'UA-163930798-1');
     </script>
+
+    <!--    Mailchimp-->
+    <script id="mcjs">!function (c, h, i, m, p) {
+        m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+    }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/f48a6a105579f10593a8aee4c/d1804123d88de89c44bb77966.js");</script>
 
 </head>
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -85,17 +92,61 @@
 
 
                     <li class="nav-item btn-contact-us pl-4 pl-lg-0">
-                        <!--            <button class="btn btn-info"  data-toggle="modal" data-target="#exampleModal">Request Invite</button>-->
+<!--                        <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Request Invite-->
+<!--                        </button>-->
                         <a class="btn btn-info"
                            href="mailto:contact@takephotos.online?subject=Requesting invite&body=Hi, I want to use your service. Looking forward for your reply!">
                             Request Free Trial
                         </a>
+
+                        <!--                        <button type="button" class="btn btn-info" data-toggle="modal"-->
+                        <!--                                data-target="#exampleModalCenter">-->
+                        <!--                            Request Free Trial-->
+                        <!--                        </button>-->
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
+
+
+<!-- Modal -->
+<!--<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"-->
+<!--     aria-hidden="true">-->
+<!--    <div class="modal-dialog modal-dialog-centered" role="document">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title" id="exampleModalLongTitle">Free Trial</h5>-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <form method="POST" enctype="multipart/form-data" id="myForm">-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="exampleInputEmail1">We will send free token to the following email:</label>-->
+<!--                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"-->
+<!--                               placeholder="Enter email">-->
+<!--                        <small id="emailHelp" class="form-text text-muted">-->
+<!--                            One token per e-mail.-->
+<!--                            <br>-->
+<!--                            We'll never share your email with anyone else.-->
+<!--                            <br>-->
+<!--                            You agree with our <a href="http://takephotos.online/docs/privacy_policy" class="px-1"-->
+<!--                                                  target="_blank">Privacy Policy</a>.-->
+<!--                        </small>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--                &lt;!&ndash;        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>&ndash;&gt;-->
+<!--                <button type="button" class="btn btn-info" onclick="send_request()">Apply</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
 <!--  <div class="banner" >-->
 <div class="banner">
     <div class="container">
@@ -371,7 +422,7 @@
 
                         <br>
                         <a class="btn btn-info" style="margin-top: 25px; margin-bottom: 25px"
-       href="mailto:contact@takephotos.online?subject=Requesting invite&body=Hi, I want to use your service. Looking forward for your reply!">
+                           href="mailto:contact@takephotos.online?subject=Requesting invite&body=Hi, I want to use your service. Looking forward for your reply!">
                             Request
                         </a>
                     </div>
@@ -859,5 +910,31 @@
     /*}*/
 
 </style>
+
+<!--<script>-->
+<!--    function send_request(callback) {-->
+<!--        $("#exampleModalCenter").modal('hide');-->
+
+<!--        var form = document.getElementById('myForm');-->
+<!--        var formData = new FormData(form);-->
+
+<!--        var xmlhttp = new XMLHttpRequest();-->
+<!--        xmlhttp.open("POST", "https://app.takephotos.online/generate_demo_token");-->
+
+<!--        // check when state changes,-->
+<!--        xmlhttp.onreadystatechange = function () {-->
+<!--            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {-->
+<!--                if (callback !== "undefined" && typeof (callback) !== "undefined")-->
+<!--                    callback(xmlhttp);-->
+<!--            }-->
+<!--        };-->
+
+<!--        xmlhttp.send(formData);-->
+
+
+<!--    }-->
+
+<!--</script>-->
+
 </body>
 </html>
